@@ -68,8 +68,8 @@ this.i18n = {
     },
 
     "x-url": {
-        "en": "App url. Use \"{url}\" to input the current tab url.",
-        "en": "Endereço do aplicativo. Use \"{url}\" para inserir o endereço atual da aba.",
+        "en": "type here API url",
+        "en": "digite aqui o endereço da API",
         "de": "Url"
     },
     "x-characters": {
@@ -89,13 +89,11 @@ this.i18n = {
         dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.\
         Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
 
-        "pt-BR": "Parte dedicada para a descrição. Colocar o texto aqui.<br>\
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut\
-        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores\
-        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem\
-        ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et\
-        dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.\
-        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+        "pt-BR": "Essa extensão chrome ajuda você a inspecionar o site que voce está visualizando,\
+         abrindo a url da aba atual em uma série de webapps de análise.<br/><br/>\
+         Use <code>\"{url}\"</code> para indicar o endereço atual da aba na API.\
+         <pre><code>Ex. http://apiexemplo.com/site/{url}</code></pre>\
+         ",
         
         "de": "Das ist eine Beschreibung. Du kannst hier beliebigen Text einfügen.<br>\
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut\

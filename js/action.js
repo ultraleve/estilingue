@@ -1,15 +1,26 @@
+function install_notice() {
+    if (localStorage.getItem('install_time'))
+        return;
+
+    var now = new Date().getTime();
+    localStorage.setItem('install_time', now);
+    chrome.tabs.create({url: "src/options_custom/index.html"});
+}
+install_notice();
+
 var appsDefault = {
-	'store.settings.app1':'http://underthesite.com/sites/{url}',
-	'store.settings.app2':'http://www.ip-adress.com/ip_tracer/{url}',
+	'store.settings.app1':'',
+	'store.settings.app2':'',
 	'store.settings.app3':'',
 	'store.settings.app4':''
 }
-if(localStorage.getItem('store.settings.app1') == "" || localStorage.getItem('store.settings.app1') == undefined){
+
+/*if(localStorage.getItem('store.settings.app1') == "" || localStorage.getItem('store.settings.app1') == undefined){
 	for(var key in appsDefault){
 		localStorage.setItem(key, appsDefault[key]);
 	}
 	
-}
+}*/
 
 chrome.browserAction.onClicked.addListener(action);
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {

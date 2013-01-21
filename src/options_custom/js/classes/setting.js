@@ -7,7 +7,7 @@
     var settings,
         Bundle;
     
-    settings = new Store("settings");
+    settings = new Store("settings",{"app1":'http://underthesite.com/sites/{url}',"app2":'http://www.ip-adress.com/ip_tracer/{url}'});
     Bundle = new Class({
         // Attributes:
         // - tab

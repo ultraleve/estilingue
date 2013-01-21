@@ -7,9 +7,10 @@
     var Store = this.Store = function (name, defaults) {
         var key;
         this.name = name;
-        
+        console.log("1. defaults",defaults);
         if (defaults !== undefined) {
             for (key in defaults) {
+                console.log("2",this,key);
                 if (defaults.hasOwnProperty(key) && this.get(key) === undefined) {
                     this.set(key, defaults[key]);
                 }
