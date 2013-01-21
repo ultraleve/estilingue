@@ -1,6 +1,6 @@
 // SAMPLE
 this.manifest = {
-    "name": "My Extension",
+    "name": "Estilingue",
     "icon": "../../icons/icon48.png",
     "settings": [
         /*{
@@ -44,7 +44,7 @@ this.manifest = {
         },*/
 
         {
-            "tab": i18n.get("details"),
+            "tab": i18n.get("information"),
             "group": i18n.get("apps"),
             "name": "app1",
             "type": "text",
@@ -52,7 +52,7 @@ this.manifest = {
             "text": i18n.get("x-url")
         },
         {
-            "tab": i18n.get("details"),
+            "tab": i18n.get("information"),
             "group": i18n.get("apps"),
             "name": "app2",
             "type": "text",
@@ -60,7 +60,7 @@ this.manifest = {
             "text": i18n.get("x-url")
         },
          {
-            "tab": i18n.get("details"),
+            "tab": i18n.get("information"),
             "group": i18n.get("apps"),
             "name": "app3",
             "type": "text",
@@ -68,12 +68,13 @@ this.manifest = {
             "text": i18n.get("x-url")
         },
         {
-            "tab": i18n.get("details"),
+            "tab": i18n.get("information"),
             "group": i18n.get("apps"),
             "name": "app4",
             "type": "text",
             "label": i18n.get("app4"),
-            "text": i18n.get("x-url")
+            "text": i18n.get("x-url"),
+            "value" : "teste"
         }/*,
 
         {

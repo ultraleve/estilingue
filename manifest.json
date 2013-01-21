@@ -1,5 +1,5 @@
 {
-  "name": "u. diagnostics",
+  "name": "Estilingue",
   "version": "0.0.1",
   "manifest_version": 2,
   "description": "Open the current site in a lot of diagnostics web-apps.",
@@ -16,7 +16,7 @@
   "default_locale": "en",
   "browser_action": {
     "default_icon": "icons/icon19.png",
-    "default_title": "u. diagnostics"
+    "default_title": "Estilingue"
   },
   "permissions": [
     "contextMenus",
