@@ -43,7 +43,7 @@ function verifyHttp(tab){
 }
 
 function action(tab){
-	var url = isHttp(tab.url);
+	var i = 0, url = isHttp(tab.url);
 	if(url){
 		apps = appsDefault;
 		for(var key in apps){
@@ -51,9 +51,10 @@ function action(tab){
 			if(val !=="" && val !== undefined){
 				var config = new Object();
 				config.url = val.replace(/{url}/gi,url);
-				config.active = false;
+				config.active = i === 0;
 				console.log(config.url);
 				chrome.tabs.create(config);
+				i++;
 			}
 		}
 	}
